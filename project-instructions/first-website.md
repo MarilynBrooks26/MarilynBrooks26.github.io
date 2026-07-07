@@ -284,7 +284,6 @@ Your updated code should look like this:
 <br>
 
 2. **Customize your page's background color** by modifying the `background` property in the `body` selector.
-
    - Open the `style.css` file in your codespace.
    - Find this line of code:
 
@@ -335,9 +334,7 @@ The `style.css` file originally added a puke green background color to your page
 
      ```html
      <!-- All content goes here -->
-     <div id="all-contents">
-
-     </div>
+     <div id="all-contents"></div>
      ```
 
 2. **Add a placeholder comment inside `<div id="all-contents">`**, just above where the `<main>` element will go.
@@ -374,13 +371,9 @@ The `style.css` file originally added a puke green background color to your page
        <!-- nav goes here (TODO 6) -->
 
        <main>
-         <div class="sidebar">
+         <div class="sidebar"></div>
 
-         </div>
-
-         <div class="content">
-
-         </div>
+         <div class="content"></div>
        </main>
      </div>
      ```
@@ -472,10 +465,9 @@ The `style.css` file originally added a puke green background color to your page
 
 1. 🔍 **Find the `<div class="content">` element** inside `index.html`
    - Look for this part of the code:
-     ```html
-     <div class="content">
 
-     </div>
+     ```html
+     <div class="content"></div>
      ```
 
 2. **Add an `<h2>` element** inside `<div class="content">` with your name.
@@ -790,10 +782,9 @@ Now make the interests section **yours**. Pick colors that match your personalit
 
 1. 🔍 **Find the `<div class="sidebar">` element** in `index.html`
    - Look for this part of the code inside the `<main>` element:
-     ```html
-     <div class="sidebar">
 
-     </div>
+     ```html
+     <div class="sidebar"></div>
      ```
 
 2. **Add an `<img>` tag inside the `<div class="sidebar">` element**
@@ -819,7 +810,11 @@ Now make the interests section **yours**. Pick colors that match your personalit
    - Example:
      ```html
      <div class="sidebar">
-       <img class="sidebar-img" src="https://example.com/image.jpg" alt="My image">
+       <img
+         class="sidebar-img"
+         src="https://example.com/image.jpg"
+         alt="My image"
+       />
      </div>
      ```
 
@@ -1205,13 +1200,13 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 3. **Update your body classes**
    - Replace your `<body>` tag with Tailwind utility classes:
      ```html
-     <body class="bg-blue-50 text-gray-800 p-4 font-sans">
+     <body class="bg-blue-50 text-gray-800 p-4 font-sans"></body>
      ```
 
 4. **Update the main container**
    - Update your `<div id="all-contents">` to use Tailwind classes:
      ```html
-     <div id="all-contents" class="max-w-4xl mx-auto">
+     <div id="all-contents" class="max-w-4xl mx-auto"></div>
      ```
 
 5. **Modernize your navigation**
@@ -1219,13 +1214,23 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
      ```html
      <nav class="bg-blue-500 p-4 rounded-lg mb-4 shadow-md">
        <div class="flex justify-between items-center">
-         <h1 class="text-white text-2xl font-bold">Your Name's Amazing Website</h1>
+         <h1 class="text-white text-2xl font-bold">
+           Your Name's Amazing Website
+         </h1>
          <ul class="flex space-x-4">
            <li>
-             <a href="index.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">Home</a>
+             <a
+               href="index.html"
+               class="text-white hover:text-blue-200 px-3 py-2 rounded"
+               >Home</a
+             >
            </li>
            <li>
-             <a href="portfolio.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">Portfolio</a>
+             <a
+               href="portfolio.html"
+               class="text-white hover:text-blue-200 px-3 py-2 rounded"
+               >Portfolio</a
+             >
            </li>
          </ul>
        </div>
@@ -1254,11 +1259,19 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 
            <!-- Interests section -->
            <div class="border-2 border-gray-300 rounded-lg p-4">
-             <h3 class="text-xl font-semibold mb-3 text-gray-800">My Interests</h3>
+             <h3 class="text-xl font-semibold mb-3 text-gray-800">
+               My Interests
+             </h3>
              <ul class="space-y-2">
-               <li class="bg-blue-100 px-3 py-2 rounded text-blue-800">Interest 1</li>
-               <li class="bg-pink-100 px-3 py-2 rounded text-pink-800">Interest 2</li>
-               <li class="bg-green-100 px-3 py-2 rounded text-green-800">Interest 3</li>
+               <li class="bg-blue-100 px-3 py-2 rounded text-blue-800">
+                 Interest 1
+               </li>
+               <li class="bg-pink-100 px-3 py-2 rounded text-pink-800">
+                 Interest 2
+               </li>
+               <li class="bg-green-100 px-3 py-2 rounded text-green-800">
+                 Interest 3
+               </li>
              </ul>
            </div>
          </div>
