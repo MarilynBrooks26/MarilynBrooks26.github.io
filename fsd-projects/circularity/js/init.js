@@ -31,7 +31,14 @@ var circles = [];
     view.addChild(circle);
     circles.push(circle);
      }   
-
+Gamification.init({
+  canvas: canvas,
+  view: view,
+  draw: draw,
+  physikz: physikz,
+  circles: circles,
+  game: game,
+});
 
         // TODO 3 : Call the drawCircle() function
 // drawCircle();
@@ -79,7 +86,7 @@ drawCircle();
            physikz.updatePosition(circles[i]);
            game.checkCirclePosition(circles[i]);
          }  
-            
+        Gamification.update(); 
         }
     
         /* 
