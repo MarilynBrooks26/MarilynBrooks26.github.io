@@ -34,17 +34,19 @@ var circles = [];
 
 
         // TODO 3 : Call the drawCircle() function
-drawCircle();
-drawCircle();
-drawCircle();
-drawCircle();
-drawCircle();
+// drawCircle();
+// drawCircle();
+// drawCircle();
+// drawCircle();
+// drawCircle();
 
 
 
 
         // TODO 7 : Use a loop to create multiple circles
-
+for (var i = 0; i < 50; i++){
+drawCircle();
+}
 
 
 
@@ -73,7 +75,9 @@ physikz.updatePosition(circles[4]);
           game.checkCirclePosition(circles[3]);
           game.checkCirclePosition(circles[4]);
             // TODO 8 / TODO 9 : Iterate over the array
-           
+         for (i = circles[0]; i < circles.length; i++) {
+           physikz.updatePosition(circles[0]);
+         }  
             
         }
     
