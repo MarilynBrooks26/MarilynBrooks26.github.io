@@ -153,7 +153,7 @@ if (ghost.x > boardWidth) {
   // this bounces off the bottom wall
   else if (ghost.y > boardHeight) {
     ghost.y = ghost.speedY;
-    ghost.speedX *= -1;
+    ghost.speedX *= 1;
   }
 }
 
